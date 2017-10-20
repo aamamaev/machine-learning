@@ -58,6 +58,7 @@ class ClientServerProtocol(asyncio.Protocol):
 
 def run_server(host, port):
     print('start')
+    
     loop = asyncio.get_event_loop()
     coro = loop.create_server(
         ClientServerProtocol,
